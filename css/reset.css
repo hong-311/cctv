@@ -1,0 +1,64 @@
+/* font */
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+
+/* 클릭시 파란박스 방지 */
+* {-webkit-tap-highlight-color: transparent}
+
+/* ios 대비 : 커서 색상 */
+input,textarea {caret-color: #302e2c;}
+
+/* reset */
+html {font-size: 16px}
+html, body {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p, a, span, em, strong, del, s, b, blockquote, br, i, u, dl, dt, dd, table, tr, thead, tbody, tfoot, th, td, img, object, form, fieldset, label, input, textarea, select, option, button, header, main, section, aside, footer, nav, article, div, ol, ul, li, pre {padding: 0; margin: 0; font-family: 'Pretendard', sans-serif; letter-spacing: -0.01rem; line-height: 1; font-weight: normal; font-size: 1rem; color:#333; box-sizing: border-box; word-break: keep-all;}
+
+/* 태그속성 지우기 */
+a, del, s, u {text-decoration: none;}
+em, i {font-style: normal}
+ol, ul, li {list-style: none;}
+table, tr, td {border-collapse: unset;}
+input {border:0; -webkit-appearance: none; -moz-appearance: none; appearance: none; caret-color: #666;}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {display: none;}
+input[type='date'] {background: #fff}
+input::-ms-clear {display: none;}
+select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+select::-ms-expand {display: none;}
+button {cursor: pointer; background: none; border: 0;}
+pre {white-space: pre-line;}
+
+/* 클래스 속성 */
+.off {display: none !important;}
+
+/* 반응형 */
+@media screen and (max-width: 1279px) {
+    html {font-size: 14px}
+}
+@media screen and (max-width: 767px) {
+    html {font-size: 10px}
+}
+
+/* IOS 선택 비활성화 */
+h1, h2, h3, h4, h5, h6, p, div, img, span, a, em {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+/* Adsense */
+.ads_wrap {display: flex; justify-content: center;}
+.ads_main_sm .adsbygoogle {display: inline-block; width: 100% !important; height: 98px !important; margin: 1.5rem 0;}
+.ads_main_mid .adsbygoogle {display: inline-block; width: 336px !important; height: 100px !important; margin: 1rem 0;}
+.ads_sub_sm .adsbygoogle {display: inline-block; width: 300px !important; height: 50px !important; margin: 1.5rem;}
+.ads_sub_sm2 .adsbygoogle {display: inline-block; width: 100% !important; height: 120px !important; margin: 1rem 0;}
+.ads_main_big .adsbygoogle {display: inline-block; width: 336px !important; height: 280px !important; margin: 1.5rem 0;}
+.ads_main_big2 .adsbygoogle {display: inline-block; width: 300px !important; height: 250px !important; margin: 1.5rem 0;}
+ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }

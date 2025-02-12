@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumSquare_acR.woff2) format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 500; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumSquare_acB.woff2) format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 700; 
+    font-style: normal; 
+    src: url(https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumSquare_acEB.woff2) format('woff2');
+    font-display: swap;
+}
+#wrap * {
+    font-family: 'NanumSquare';
+}
+main {
+    padding-bottom: 10rem;
+}
+header {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 6px -9px;
+}
+header a{
+    width: 50%;
+    display: block;
+}
+header a img{
+    width: 100%;
+}
+footer {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    left: 0;bottom: 0;
+    border-radius: 3rem 3rem 0 0;
+    background-color: #fafcff;
+    height: 9rem;
+    box-shadow: 0 .2rem .7rem rgba(0, 0, 0, .3);
+  }
+  footer ul {
+    display: flex;justify-content: space-between;align-items: center;
+    height: 100%;width: 100%;
+  }
+  footer li {height: 100%;width: 100%;}
+  footer a {
+    color: #7a7a7a;
+    font-size: 1.5rem;
+    padding-top: 4.5rem;
+    position: relative;
+    height: 100%;width: 100%;
+    transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;justify-content: center;align-items: center;
+  }
+  footer a.on {color:#464b5e;font-weight: bold;}
+  footer a::before {
+    content: "";
+    position: absolute;
+    left: 50%;top:1rem;
+    transform: translateX(-50%);
+    width: 5rem;height: 4rem;
+  }
+  
+  
+  footer li:nth-of-type(1) a::before {background: url(../img/icon-1-off.png) no-repeat center / contain;}
+  footer li:nth-of-type(2) a::before {background: url(../img/icon-2-off.png) no-repeat center / contain;}
+  footer li:nth-of-type(3) a::before {background: url(../img/icon-3-off.png) no-repeat center / contain;}
+  footer li:nth-of-type(4) a::before {background: url(../img/icon-4-off.png) no-repeat center / contain;}
+  
+  
+  footer li:nth-of-type(1) a.on::before {background: url(../img/icon-1.png) no-repeat center / contain;}
+  footer li:nth-of-type(2) a.on::before {background: url(../img/icon-2.png) no-repeat center / contain;}
+  footer li:nth-of-type(3) a.on::before {background: url(../img/icon-3.png) no-repeat center / contain;}
+  footer li:nth-of-type(4) a.on::before {background: url(../img/icon-4.png) no-repeat center / contain;}
+  

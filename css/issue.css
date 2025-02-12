@@ -1,0 +1,294 @@
+main {
+    padding: 2rem 1.5rem 10rem;
+}
+.data-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.data-list .box{
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.data-list .box .left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.data-list .box .right{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: right;
+}
+.data-list .box .right img{
+    width: 70%;
+}
+.data-list .box .details img{
+    width: 80%;
+}
+/* 페이지네이션 스타일 */
+.pagination {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.pagination a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 0.25rem;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+
+.pagination a.active {
+    font-weight: 800;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+
+/* 기본 스타일 */
+.event-type {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 2rem;
+}
+.event-types ul{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.event-types li{
+    display: inline-block;
+    border-radius: 2rem;
+    padding: .5rem 1rem !important;
+    font-size: 1.5rem;
+
+}
+/* 이벤트 종류별 색상 설정 */
+#event-all {
+    background-color: #acc6aa;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+
+#event-공사 {
+    background-color: #a3c4c5;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+
+#event-기타돌발 {
+    background-color: #e2e2e2;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+#event-기상 {
+    background-color: #ffeb99;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+#event-기타 {
+    background-color: #d4ebd0; 
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+#event-교통사고 {
+    background-color: #71a0a5;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+#event-재난 {
+    background-color: #856c8b;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+
+
+.event-공사 {
+    background-color: #a3c4c5;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+.event-기타돌발 {
+    background-color: #e2e2e2;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+.event-기상 {
+    background-color: #ffeb99;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+.event-기타 {
+    background-color: #d4ebd0; 
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+.event-교통사고 {
+    background-color: #71a0a5;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+.event-재난 {
+    background-color: #856c8b;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 2rem;
+}
+
+.roadname {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #656a79;
+}
+ /* 모달 기본 스타일 */
+ .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* 모달 콘텐츠 스타일 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 50% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 1.5rem;
+}
+
+/* 테이블 스타일 */
+.modal-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #ddd;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.modal-content th, .modal-content td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.modal-content td:nth-of-type(1) {
+    border-right: 2px solid #ddd;
+}
+.modal-content tr:last-child td {
+    border-bottom: none;
+}
+
+.modal-content tr:hover {
+    background-color: #f5f5f5;
+}
+.modal-content td  {
+    font-size: 1.4rem;
+    color: #656a79;
+    line-height: 1.3;
+}
+.modal-content td strong {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 img{
+    width: 50%;
+}
+h2 .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+h2 .left span{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* 닫기 버튼 스타일 */
+.close {
+    float: right;
+    text-align: right;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 페이지네이션 스타일 */
+#pagination {
+text-align: center;
+margin: 20px 0;
+}
+.pagination-btn {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+.pagination-btn.active {
+    font-weight: 800;
+}
+.pagination-btn.disabled {
+    border-color: #ccc;
+    pointer-events: none;
+}
+.box .right button {
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon-off.png) no-repeat center / contain;
+
+}
+
+.box.on .right button {
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon-fill-green.png) no-repeat center / contain;
+
+}

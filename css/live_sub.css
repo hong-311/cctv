@@ -1,0 +1,160 @@
+main {
+    padding: 2rem 1.5rem 10rem;
+}
+
+.select_box {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+#dropdownBtn {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    position: relative; 
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #656a79;
+    border-radius: 1.5rem;
+}
+
+#dropdownBtn.on {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#dropdownBtn::after {
+    content: "";
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/down-arrow-2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 드롭다운 메뉴 스타일 */
+#dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; 
+    left: 0; 
+}
+#dropdownMenu.on {
+    display: block;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+#dropdownMenu a {
+    color: #9095a3;
+    padding: 2rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+#dropdownMenu a:first-child {
+    border-bottom: 1px solid #ddd;
+}
+#dropdownMenu a:hover {
+    background-color: #f1f1f1;
+}
+
+#dropdownBtn.on::after {
+    background-image: url('../img/up-arrow-2.png'); 
+}
+.data-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.data-list .box{
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 1px solid #ddd;
+}
+.data-list .box .top{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.data-list .box .details{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+.data-list .box .details .speed, .box .details .time{
+    font-size: 1.3rem;
+    color: #656a79;
+    font-weight: 500;
+}
+
+.up {
+    background-color: #94d48a; 
+  
+}
+.down {
+    background-color: #7b84b4; 
+
+}
+
+.updown {
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.roadname {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #656a79;
+}
+/* 페이지네이션 스타일 */
+.pagination {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.pagination a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 0.25rem;
+    font-size: 1.4rem;
+    display: inline-block;
+}
+
+.pagination a.active {
+    font-weight: 800;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a:first-child,
+.pagination a:last-child {
+    font-weight: bold;
+}
+
+.pagination a:first-child:hover,
+.pagination a:last-child:hover {
+    background-color: #ccc;
+}

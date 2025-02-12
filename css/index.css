@@ -1,0 +1,19 @@
+#wrap { 
+    background: url(../img/index_background.png) 
+    no-repeat; min-height: 100vh; 
+    background-position-x: center;
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 12rem;
+    background-color: black;
+}
+#wrap .img_wrap { 
+    text-align: center;
+ }
+#wrap .img_wrap img { 
+    width: 50%; 
+    max-width: 35rem;
+}

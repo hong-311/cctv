@@ -1,0 +1,68 @@
+.top {
+    background-color: #4e5365;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.top .left {
+    width: 65%;
+    display: inline-flex;
+    align-items: center;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.top .left img {
+    width: 20%;
+    margin-right: .5rem;
+}
+.top .left span {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.top .right {
+    width: 35%;
+    position: relative;
+}
+.top .right span {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+.top .right select {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; 
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../img/down-arrow.png') no-repeat right 10px center;
+    background-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #7b84b4;
+    font-weight: 500;
+}
+
+/* 드롭다운 메뉴가 열린 상태에서의 스타일 */
+.top .right select:focus {
+    background-image: url('../img/up-arrow.png');
+}
+
+/* 드롭다운 메뉴 항목 스타일 */
+.top .right select option {
+    padding: 10px;
+    font-size: 1.6rem;
+    color: #333;
+    background-color: #fff;
+}
+
+/* 선택된 항목의 스타일 */
+.top .right select option:checked {
+    background-color: none !important; 
+    border: none;
+}
